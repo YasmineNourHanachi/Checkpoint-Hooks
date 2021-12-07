@@ -11,7 +11,7 @@ const Rating = ({ Rates }) => {
   return (
     <span>
       <Rate disabled value={Rates} />
-      {Rates ? <span className="ant-rate-text">{[Rates - 1]}</span> : ""}
+      {Rates ? <span>{[Rates]}</span> : ""}
     </span>
   );
 };

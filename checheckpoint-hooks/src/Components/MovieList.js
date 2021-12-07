@@ -4,6 +4,7 @@ import Filter from "./Filter";
 import RatingFilter from "./RatingFilter";
 
 import "./MovieList.css";
+import AddMovie from "./AddMovie";
 
 const MovieList = (props) => {
   const [movies, setMovies] = useState([
@@ -62,10 +63,8 @@ const MovieList = (props) => {
   return (
     <div>
       <RatingFilter Star={Star} setStar={setStar} />
-      <Filter>
-        search={search} setSearch={setSearch}
-      </Filter>
-
+      <Filter search={search} setSearch={setSearch} />
+      <AddMovie movies={movies} setMovies={setMovies} />
       <div className="listofMovies">
         {movies
           .filter(

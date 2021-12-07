@@ -9,7 +9,7 @@ const RatingFilter = ({ Star, setStar }) => {
     <div>
       <span>
         <Rate onChange={handleChange} value={Star} />
-        {Star ? <span className="ant-rate-text">{[Star - 1]}</span> : ""}
+        {Star ? <span>{[Star - 1]}</span> : ""}
       </span>
     </div>
   );
