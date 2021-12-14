@@ -42,7 +42,6 @@ const AddMovie = ({ movies, setMovies }) => {
             type="text"
             className="modalInput"
             name="title"
-            value={newMovie.Title}
             onChange={handleChange}
             placeholder="Enter Movie Title ..."
           />
@@ -60,7 +59,6 @@ const AddMovie = ({ movies, setMovies }) => {
             type="text"
             className="modalInput"
             name="poster"
-            value={newMovie.Poster}
             onChange={handleChange}
             placeholder="Enter Poster URL ..."
           />
@@ -76,7 +74,7 @@ const AddMovie = ({ movies, setMovies }) => {
                 Title: newMovie.Title,
                 Resume: "",
                 Poster: newMovie.Poster,
-                Ratz: newMovie.Rate,
+                Rates: newMovie.Rate,
               })
             }
           >
